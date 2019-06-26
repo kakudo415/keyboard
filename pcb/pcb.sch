@@ -2098,38 +2098,27 @@ Wire Wire Line
 Wire Wire Line
 	6350 5700 6350 5800
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5D13142D
-P 7850 4100
-F 0 "J1" H 7957 4967 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 7957 4876 50  0000 C CNN
-F 2 "digikey-footprints:USB-C_Female_CX70M-24P1" H 8000 4100 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8000 4100 50  0001 C CNN
-	1    7850 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR010
 U 1 1 5D1342DD
-P 7550 5200
-F 0 "#PWR010" H 7550 4950 50  0001 C CNN
-F 1 "GND" H 7555 5027 50  0000 C CNN
-F 2 "" H 7550 5200 50  0001 C CNN
-F 3 "" H 7550 5200 50  0001 C CNN
-	1    7550 5200
+P 7550 6300
+F 0 "#PWR010" H 7550 6050 50  0001 C CNN
+F 1 "GND" H 7555 6127 50  0000 C CNN
+F 2 "" H 7550 6300 50  0001 C CNN
+F 3 "" H 7550 6300 50  0001 C CNN
+	1    7550 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 5000 7550 5100
+	7550 6100 7550 6200
 Wire Wire Line
-	7550 5100 7850 5100
+	7550 6200 7850 6200
 Wire Wire Line
-	7850 5100 7850 5000
-Connection ~ 7550 5100
+	7850 6200 7850 6100
+Connection ~ 7550 6200
 Wire Wire Line
-	7550 5100 7550 5200
+	7550 6200 7550 6300
 NoConn ~ 8450 4600
-NoConn ~ 8450 4700
+NoConn ~ 8450 4500
 $Comp
 L power:VBUS #PWR02
 U 1 1 5D10FDDC
@@ -2445,4 +2434,37 @@ F 3 "" H 2500 6000 50  0001 C CNN
 	1    2500 6000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_C_Receptacle J1
+U 1 1 5D16305C
+P 7850 4500
+F 0 "J1" H 7957 5767 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 7957 5676 50  0000 C CNN
+F 2 "digikey-footprints:USB-C_Female_CX70M-24P1" H 8000 4500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8000 4500 50  0001 C CNN
+	1    7850 4500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8450 4800
+NoConn ~ 8450 4900
+NoConn ~ 8450 5100
+NoConn ~ 8450 5200
+NoConn ~ 8450 5400
+NoConn ~ 8450 5500
+NoConn ~ 8450 5700
+NoConn ~ 8450 5800
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5D307145
+P 7950 6200
+F 0 "#FLG02" H 7950 6275 50  0001 C CNN
+F 1 "PWR_FLAG" V 7950 6328 50  0000 L CNN
+F 2 "" H 7950 6200 50  0001 C CNN
+F 3 "~" H 7950 6200 50  0001 C CNN
+	1    7950 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 6200 7950 6200
+Connection ~ 7850 6200
 $EndSCHEMATC
