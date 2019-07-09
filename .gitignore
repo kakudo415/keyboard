@@ -1,4 +1,8 @@
 *.zip
+*.o
+*.elf
+*.hex
+*.ihex
 
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
